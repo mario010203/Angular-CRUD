@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Kenjo-CRUD"
+    }
+  },
+  "defaultProject": "Kenjo-CRUD",
+  "cli": {
+    "analytics": false
+  }
 }
