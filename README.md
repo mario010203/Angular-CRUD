@@ -45,12 +45,12 @@ https://nodejs.org/ version >10.x.x
 - Docker
 https://docs.docker.com/get-docker
 
-In order to run this repository in local:
+In order to run this repository in local you can choose between:
 
-**1)Docker:**
+**Docker:**
 Install Docker: https://docs.docker.com/get-docker
 
-**2)Docker Compose:**
+**Docker Compose:**
 Install Docker Compose: https://docs.docker.com/compose/install
 
 ### Build
