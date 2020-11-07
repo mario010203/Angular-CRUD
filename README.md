@@ -121,7 +121,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Mario Carreras
-mariojose1490@hotmail.com
-https://www.linkedin.com/in/mariocarreras/
-https://github.com/mario010203
+Mario Carreras<br>
+mariojose1490@hotmail.com<br>
+https://www.linkedin.com/in/mariocarreras<br>
+https://github.com/mario010203<br>
