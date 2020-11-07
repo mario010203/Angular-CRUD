@@ -3,7 +3,7 @@
     <img src="https://www.softwaredoit.es/logotipos/kenjo.jpg?t=2020-06-29_09_05_24" alt="Kenjo" width="450" height="200">
   </a>
 
-  <h3>Because humans are more than resources.</h3>
+*Because humans are more than resources*
 
 ## Table of Contents
 
@@ -111,17 +111,14 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch 
 5. Open a Pull Request
 
-<!-- LICENSE -->
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<!-- CONTACT -->
-
 ## Contact
 
-Mario Carreras<br>
-mariojose1490@hotmail.com<br>
-https://www.linkedin.com/in/mariocarreras<br>
-https://github.com/mario010203<br>
+- Mario Carreras<br>
+- mariojose1490@hotmail.com<br>
+- https://www.linkedin.com/in/mariocarreras<br>
+- https://github.com/mario010203<br>
