@@ -39,29 +39,29 @@ The following technologies were used in order to build this service:
 
 ### Prerequisites
 
-Nodejs
+- Nodejs
 https://nodejs.org/ version >10.x.x
 
-Docker
+- Docker
 https://docs.docker.com/get-docker
 
 In order to run this repository in local:
 
-1)Docker:
+**1)Docker:**
 Install Docker: https://docs.docker.com/get-docker
 
-2)Docker Compose:
+**2)Docker Compose:**
 Install Docker Compose: https://docs.docker.com/compose/install
 
 ### Build
 
-1. Clone the repo
+**1. Clone the repo**
 
 ```
 git clone https://github.com/mario010203/Kenjo-Crud
 ```
 
-2. Docker:
+**2. Docker:**
 
 Enter the following command in root folder (./Kenjo-Crud)
 
@@ -74,7 +74,7 @@ $ docker run <alias>
 
 ```
 
-2.1 Docker Compose:
+**2.1 Docker Compose:**
 
 ```
 $ docker-compose up --build
