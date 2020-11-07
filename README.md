@@ -3,7 +3,7 @@
     <img src="https://www.softwaredoit.es/logotipos/kenjo.jpg?t=2020-06-29_09_05_24" alt="Kenjo" width="450" height="200">
   </a>
 
-  <h3><i>Because humans are more than resources.<i></h3>
+*Because humans are more than resources*
 
 ## Table of Contents
 
