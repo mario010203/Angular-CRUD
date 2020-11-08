@@ -15,22 +15,18 @@ import { AlbumCreateComponent } from './components/album/album-create/album-crea
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'artist', component: ArtistComponent, pathMatch: 'full' },
+  { path: 'artist', component: ArtistComponent },
   { path: 'artist/detail/:id', component: ArtistDetailComponent },
   { path: 'artist/edit/:id', component: ArtistEditComponent },
-  {
-    path: 'artist/create',
-    component: ArtistCreateComponent,
-    pathMatch: 'full',
-  },
-  { path: 'albums', component: AlbumComponent, pathMatch: 'full' },
+  { path: 'artist/create', component: ArtistCreateComponent },
+  { path: 'albums', component: AlbumComponent },
   { path: 'album/detail/:id', component: AlbumDetailComponent },
   { path: 'album/edit/:id', component: AlbumEditComponent },
-  { path: 'album/create', component: AlbumCreateComponent, pathMatch: 'full' },
+  { path: 'album/create', component: AlbumCreateComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
