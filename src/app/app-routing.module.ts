@@ -19,10 +19,12 @@ const routes: Routes = [
   { path: 'artist/detail/:id', component: ArtistDetailComponent },
   { path: 'artist/edit/:id', component: ArtistEditComponent },
   { path: 'artist/create', component: ArtistCreateComponent },
+  { path: 'artists/create', component: ArtistCreateComponent },
   { path: 'albums', component: AlbumComponent },
   { path: 'album/detail/:id', component: AlbumDetailComponent },
   { path: 'album/edit/:id', component: AlbumEditComponent },
   { path: 'album/create', component: AlbumCreateComponent },
+  { path: 'albums/create', component: AlbumCreateComponent },
 ];
 
 @NgModule({
