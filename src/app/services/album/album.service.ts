@@ -12,26 +12,26 @@ export class Albumservice {
   constructor(private http: HttpClient) {}
 
   getAlbums(): Observable<any> {
-    return this.http.get(`${baseUrl}/${albumsConfig.allAlbumsurl}`);
+    return this.http.get(`${baseUrl}${albumsConfig.allAlbumsurl}`);
   }
 
   getAlbumdetail(id): Observable<any> {
-    return this.http.get(`${baseUrl}/${albumsConfig.albumId}`);
+    return this.http.get(`${baseUrl}${albumsConfig.albumId}`);
   }
 
   editAlbum(id, album): Observable<any> {
-    return this.http.put(`${baseUrl}/${albumsConfig.albumEdit}`, album);
+    return this.http.put(`${baseUrl}${albumsConfig.albumEdit}`, album);
   }
 
   deleteAlbum(id): Observable<any> {
-    return this.http.delete(`${baseUrl}/${albumsConfig.albumDelete}`);
+    return this.http.delete(`${baseUrl}${albumsConfig.albumDelete}`);
   }
 
   createAlbum(album): Observable<any> {
-    return this.http.post(`${baseUrl}/${albumsConfig.albumCreate}`, album);
+    return this.http.post(`${baseUrl}${albumsConfig.albumCreate}`, album);
   }
 
   bulkCreatealbums(album): Observable<any> {
-    return this.http.post(`${baseUrl}/${albumsConfig.albumsBulkcreate}`, album);
+    return this.http.post(`${baseUrl}${albumsConfig.albumsBulkcreate}`, album);
   }
 }
