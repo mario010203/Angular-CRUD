@@ -4,7 +4,7 @@ export const artistsConfig = {
     allArtistsurl: '/artists/all',
     artistId: '/artist/:id',
     artistEdit: '/artist/:id',
-    artistDelete: '/artist/:id',
+    artistDelete: '/artist/',
     artistCreate: '/artist',
     artistsBulkcreate:'/artists/'
 }

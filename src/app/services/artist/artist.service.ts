@@ -14,16 +14,12 @@ export class Artistservice {
     return this.http.get(`${baseUrl}${artistsConfig.allArtistsurl}`);
   }
 
-  getArtistdetail(id): Observable<any> {
-    return this.http.get(`${baseUrl}${artistsConfig.artistId}`);
-  }
-
-  editArtist(id, artist) {
-    return this.http.put(`${baseUrl}${artistsConfig.artistEdit}`, artist);
+  editArtist(id) {
+    return this.http.put(`${baseUrl}${artistsConfig.artistEdit}`, id);
   }
 
   deleteArtist(id) {
-    return this.http.delete(`${baseUrl}${artistsConfig.artistDelete}`);
+    return this.http.delete(`${baseUrl}${artistsConfig.artistDelete}${id}`);
   }
 
   createartist(artist) {
