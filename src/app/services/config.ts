@@ -1,7 +1,7 @@
 export const baseUrl = 'http://localhost:3000';
 
 export const artistsConfig = {
-    allArtistsurl: '/artist/all',
+    allArtistsurl: '/artists/all',
     artistId: '/artist/:id',
     artistEdit: '/artist/:id',
     artistDelete: '/artist/:id',
