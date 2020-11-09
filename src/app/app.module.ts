@@ -18,6 +18,7 @@ import { ArtistEditComponent } from './components/artist/artist-edit/artist-edit
 import { ArtistCreateComponent } from './components/artist/artist-create/artist-create.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ArtistEditComponent,
     ArtistCreateComponent,
     HomeComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span class="mario">Mario</span><span class="music">Music</span>
+    <span class="spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="toArtists()">Artists</button>
+      <button mat-menu-item (click)="toAlbums()">Albums</button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>

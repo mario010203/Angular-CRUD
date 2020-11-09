@@ -1,12 +1,5 @@
 $Tablet: 768px;
 
-.spacer {
-  flex: 1 1 auto;
-}
-
-.mario {
-  color: #ff005a;
-}
 
 .principal {
   height: 650px;
@@ -17,10 +10,22 @@ $Tablet: 768px;
   align-items: center;
   align-content: center;
 
+  img {
+    width: 85%;
+
+    @media (min-width: $Tablet) {
+      width: 40%;
+    }
+
+
+  }
+
+
   %message-shared {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 25px;
     line-height: 0.9;
+    margin-right:10px;
 
     @media (min-width: $Tablet) {
       font-size: 72px;
@@ -32,6 +37,7 @@ $Tablet: 768px;
     justify-content: center;
     align-content: center;
     align-items: center;
+    margin:40px;
 
     .first-message {
       @extend %message-shared;
@@ -47,7 +53,7 @@ $Tablet: 768px;
 
 @media (min-width: $Tablet) {
   .principal {
-    height: 100vh;
+    height: 100%;
   }
 }
 

@@ -1,19 +1,9 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span class="mario">Mario</span><span class="music">Music</span>
-    <span class="spacer"></span>
-    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>Artists</button>
-      <button mat-menu-item>Albums</button>
-    </mat-menu>
-  </mat-toolbar-row>
-</mat-toolbar>
-
 <div class="principal">
+  <img src="../../../assets/images/hero-bg.png">
   <div class="message">
     <p class="first-message">Music</p>
     <p class="second-message">for everyone.</p>
+   
   </div>
   <div class="button-container">
     <button class="button-artists" (click)="toArtists()">Artists</button>
