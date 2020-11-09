@@ -3,26 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
 
-import { ArtistComponent } from './components/artist/artist/artist.component';
-import { ArtistEditComponent } from './components/artist/artist-edit/artist-edit.component';
-import { ArtistCreateComponent } from './components/artist/artist-create/artist-create.component';
+import { ArtistComponent } from './components/artist/artist.component';
 
-import { AlbumComponent } from './components/album/album/album.component';
-import { AlbumDetailComponent } from './components/album/album-detail/album-detail.component';
-import { AlbumEditComponent } from './components/album/album-edit/album-edit.component';
-import { AlbumCreateComponent } from './components/album/album-create/album-create.component';
+import { AlbumComponent } from './components/album/album.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'artists', component: ArtistComponent },
-  { path: 'artist/edit/:id', component: ArtistEditComponent },
-  { path: 'artist/create', component: ArtistCreateComponent },
-  { path: 'artists/create', component: ArtistCreateComponent },
   { path: 'albums', component: AlbumComponent },
-  { path: 'album/detail/:id', component: AlbumDetailComponent },
-  { path: 'album/edit/:id', component: AlbumEditComponent },
-  { path: 'album/create', component: AlbumCreateComponent },
-  { path: 'albums/create', component: AlbumCreateComponent },
 ];
 
 @NgModule({

@@ -8,40 +8,31 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import {  MatSelectModule } from '@angular/material/select';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatNativeDateModule } from '@angular/material/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AlbumComponent } from './components/album/album/album.component';
-import { AlbumDetailComponent } from './components/album/album-detail/album-detail.component';
-import { AlbumEditComponent } from './components/album/album-edit/album-edit.component';
-import { AlbumCreateComponent } from './components/album/album-create/album-create.component';
-import { ArtistComponent } from './components/artist/artist/artist.component';
-import { ArtistEditComponent } from './components/artist/artist-edit/artist-edit.component';
-import { ArtistCreateComponent } from './components/artist/artist-create/artist-create.component';
+import { ArtistComponent } from './components/artist/artist.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { CourseDialogComponent } from './components/coursedialog/coursedialog.component';
+import { ArtistDialogEditComponent } from './components/dialogs/artist/edit/artistdialogedit.component';
+import { ArtistDialogCreateComponent } from './components/dialogs/artist/create/artistdialogcreate.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlbumComponent,
-    AlbumDetailComponent,
-    AlbumEditComponent,
-    AlbumCreateComponent,
     ArtistComponent,
-    ArtistEditComponent,
-    ArtistCreateComponent,
     HomeComponent,
     NavbarComponent,
-    CourseDialogComponent
+    ArtistDialogEditComponent,
+    ArtistDialogCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -60,8 +51,8 @@ import { CourseDialogComponent } from './components/coursedialog/coursedialog.co
     MatInputModule,
     MatSelectModule,
     MatDatepickerModule,
-    MatNativeDateModule
-   ],
+    MatNativeDateModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
