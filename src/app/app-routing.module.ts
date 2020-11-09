@@ -15,7 +15,7 @@ import { AlbumCreateComponent } from './components/album/album-create/album-crea
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'artist', component: ArtistComponent },
+  { path: 'artists', component: ArtistComponent },
   { path: 'artist/detail/:id', component: ArtistDetailComponent },
   { path: 'artist/edit/:id', component: ArtistEditComponent },
   { path: 'artist/create', component: ArtistCreateComponent },

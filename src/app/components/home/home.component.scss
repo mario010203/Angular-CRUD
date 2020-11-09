@@ -1,3 +1,5 @@
+$Tablet: 768px;
+
 .spacer {
   flex: 1 1 auto;
 }
@@ -7,30 +9,59 @@
 }
 
 .principal {
-  height: 724px;
+  height: 650px;
   background-color: #212529;
-  display:flex;
-  flex-direction:column;
-  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   align-content: center;
 
+  %message-shared {
+    font-size: 36px;
+    margin-bottom: 25px;
+    line-height: 0.9;
 
+    @media (min-width: $Tablet) {
+      font-size: 72px;
+    }
+  }
+
+  .message {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    .first-message {
+      @extend %message-shared;
+      color: #fc0254;
+    }
+
+    .second-message {
+      @extend %message-shared;
+      color: #fff;
+    }
+  }
 }
 
-.button-container{
+@media (min-width: $Tablet) {
+  .principal {
+    height: 100vh;
+  }
+}
 
+.button-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;;
+  align-content: center;
 }
 
 %button-shared {
   border: none;
   font-size: 14px;
   font-weight: 500;
-  min-width: 195px;
   padding: 23px 20px;
   border-radius: 50px;
   text-transform: uppercase;
@@ -38,7 +69,11 @@
   line-height: normal;
   cursor: pointer;
   text-align: center;
-  margin:10px;
+  margin: 10px;
+
+  @media (min-width: $Tablet) {
+    font-size: 24px;
+  }
 }
 
 .button-artists {
