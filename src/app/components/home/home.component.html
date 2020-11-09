@@ -1,9 +1,8 @@
 <div class="principal">
-  <img src="../../../assets/images/hero-bg.png">
+  <img src="../../../assets/images/hero-bg.png" [@simpleFadeAnimation]="'in'" />
   <div class="message">
-    <p class="first-message">Music</p>
-    <p class="second-message">for everyone.</p>
-   
+    <p class="first-message" [@simpleFadeAnimation]="'in'">Music</p>
+    <p class="second-message" [@simpleFadeAnimation]="'in'">for everyone.</p>
   </div>
   <div class="button-container">
     <button class="button-artists" (click)="toArtists()">Artists</button>
