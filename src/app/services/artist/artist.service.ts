@@ -23,7 +23,6 @@ export class Artistservice {
   }
 
   createartist(artist) {
-    console.log(`${baseUrl}${artistsConfig.artistCreate}`, artist);
     return this.http.post(`${baseUrl}${artistsConfig.artistCreate}`, artist);
   }
 }

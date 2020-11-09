@@ -15,14 +15,17 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatNativeDateModule } from '@angular/material/core';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArtistComponent } from './components/artist/artist.component';
+import { AlbumComponent } from './components/album/album.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ArtistDialogEditComponent } from './components/dialogs/artist/edit/artistdialogedit.component';
 import { ArtistDialogCreateComponent } from './components/dialogs/artist/create/artistdialogcreate.component';
+import { AlbumDialogCreateComponent } from './components/dialogs/album/create/albumdialogcreate.component';
+import { AlbumDialogEditComponent } from './components/dialogs/album/edit/albumdialogedit.component';
+
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { ArtistDialogCreateComponent } from './components/dialogs/artist/create/
     HomeComponent,
     NavbarComponent,
     ArtistDialogEditComponent,
-    ArtistDialogCreateComponent
+    ArtistDialogCreateComponent,
+    AlbumDialogCreateComponent,
+    AlbumDialogEditComponent,
+    AlbumComponent
   ],
   imports: [
     BrowserModule,

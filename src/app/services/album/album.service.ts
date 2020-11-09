@@ -7,7 +7,6 @@ import { baseUrl, albumsConfig } from '../config';
 @Injectable({
   providedIn: 'root',
 })
-
 export class Albumservice {
   constructor(private http: HttpClient) {}
 
@@ -15,23 +14,15 @@ export class Albumservice {
     return this.http.get(`${baseUrl}${albumsConfig.allAlbumsurl}`);
   }
 
-  getAlbumdetail(id): Observable<any> {
-    return this.http.get(`${baseUrl}${albumsConfig.albumId}`);
+  editAlbum(id, album) {
+    return this.http.put(`${baseUrl}${albumsConfig.albumEdit}${id}`, album);
   }
 
-  editAlbum(id, album): Observable<any> {
-    return this.http.put(`${baseUrl}${albumsConfig.albumEdit}`, album);
+  deleteAlbum(id) {
+    return this.http.delete(`${baseUrl}${albumsConfig.albumDelete}${id}`);
   }
 
-  deleteAlbum(id): Observable<any> {
-    return this.http.delete(`${baseUrl}${albumsConfig.albumDelete}`);
-  }
-
-  createAlbum(album): Observable<any> {
+  createAlbum(album) {
     return this.http.post(`${baseUrl}${albumsConfig.albumCreate}`, album);
-  }
-
-  bulkCreatealbums(album): Observable<any> {
-    return this.http.post(`${baseUrl}${albumsConfig.albumsBulkcreate}`, album);
   }
 }
