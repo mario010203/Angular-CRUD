@@ -2,11 +2,9 @@ export const baseUrl = 'http://localhost:3000';
 
 export const artistsConfig = {
     allArtistsurl: '/artists/all',
-    artistId: '/artist/:id',
-    artistEdit: '/artist/:id',
+    artistEdit: '/artist/',
     artistDelete: '/artist/',
     artistCreate: '/artist',
-    artistsBulkcreate:'/artists/'
 }
 
 export const albumsConfig = {
@@ -15,5 +13,5 @@ export const albumsConfig = {
     albumEdit: '/album/:id',
     albumDelete: '/album/:id',
     albumCreate: '/album/',
-    albumsBulkcreate:'/albums/'
+
 }

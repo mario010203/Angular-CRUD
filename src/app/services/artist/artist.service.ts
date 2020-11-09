@@ -14,8 +14,8 @@ export class Artistservice {
     return this.http.get(`${baseUrl}${artistsConfig.allArtistsurl}`);
   }
 
-  editArtist(id) {
-    return this.http.put(`${baseUrl}${artistsConfig.artistEdit}`, id);
+  editArtist(id, artist) {
+    return this.http.put(`${baseUrl}${artistsConfig.artistEdit}${id}`, artist);
   }
 
   deleteArtist(id) {
@@ -25,12 +25,5 @@ export class Artistservice {
   createartist(artist) {
     console.log(`${baseUrl}${artistsConfig.artistCreate}`, artist);
     return this.http.post(`${baseUrl}${artistsConfig.artistCreate}`, artist);
-  }
-
-  bulkCreateartists(artist) {
-    return this.http.post(
-      `${baseUrl}${artistsConfig.artistsBulkcreate}`,
-      artist
-    );
   }
 }

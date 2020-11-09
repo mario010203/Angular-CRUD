@@ -1,0 +1,50 @@
+<div class="col-6 mx-auto mt-5 content">
+  <form [formGroup]="formArtist" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <mat-form-field appearance="fill">
+            <mat-label>Artist Id</mat-label>
+            <input matInput formControlName="artistId" />
+          </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Artist Name</mat-label>
+        <input matInput formControlName="name" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Photo Url</mat-label>
+        <input matInput formControlName="photoUrl" />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-label>Select the Born and Death Dates:</mat-label>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="birthdate" formControlName="birthdate"  />
+        <mat-datepicker-toggle
+          matSuffix
+          [for]="birthdate"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #birthdate></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="deathDate"  formControlName="deathDate"   />
+        <mat-datepicker-toggle
+          matSuffix
+          [for]="deathDate"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #deathDate></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+    <div class="buttons">
+      <button type="submit" mat-raised-button color="accent" >
+        Submit Changes
+      </button>
+      <button mat-raised-button color="warn" (click)="close()">
+        Cancel Changes
+      </button>
+    </div>
+  </form>
+</div>

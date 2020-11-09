@@ -6,9 +6,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTableModule } from '@angular/material/table';
-
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import {  MatSelectModule } from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatNativeDateModule } from '@angular/material/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,11 +22,12 @@ import { AlbumDetailComponent } from './components/album/album-detail/album-deta
 import { AlbumEditComponent } from './components/album/album-edit/album-edit.component';
 import { AlbumCreateComponent } from './components/album/album-create/album-create.component';
 import { ArtistComponent } from './components/artist/artist/artist.component';
-import { ArtistDetailComponent } from './components/artist/artist-detail/artist-detail.component';
 import { ArtistEditComponent } from './components/artist/artist-edit/artist-edit.component';
 import { ArtistCreateComponent } from './components/artist/artist-create/artist-create.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { CourseDialogComponent } from './components/coursedialog/coursedialog.component';
+
 
 @NgModule({
   declarations: [
@@ -31,11 +37,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AlbumEditComponent,
     AlbumCreateComponent,
     ArtistComponent,
-    ArtistDetailComponent,
     ArtistEditComponent,
     ArtistCreateComponent,
     HomeComponent,
     NavbarComponent,
+    CourseDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +53,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     BrowserAnimationsModule,
     MatMenuModule,
     MatTableModule,
-],
+    MatDialogModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
+   ],
   providers: [],
   bootstrap: [AppComponent],
 })

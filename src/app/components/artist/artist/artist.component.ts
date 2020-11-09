@@ -1,7 +1,9 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 
 import { Artistservice } from 'src/app/services/artist/artist.service';
+
+import { CourseDialogComponent } from 'src/app/components/coursedialog/coursedialog.component';
 
 @Component({
   selector: 'app-artist',
@@ -17,12 +19,12 @@ export class ArtistComponent implements OnInit {
     'edit',
     'delete',
   ];
+
   artists: any;
 
   constructor(
     private artistService: Artistservice,
-    private changeDetectorRefs: ChangeDetectorRef,
-    private router: Router
+    private dialog: MatDialog
   ) {}
 
   ngOnInit(): void {
@@ -52,5 +54,20 @@ export class ArtistComponent implements OnInit {
       }
     );
     this.ngOnInit();
+  }
+
+  openDialog(artists) {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+
+    dialogConfig.data = {
+      artists,
+    };
+
+    const dialogRef = this.dialog.open(CourseDialogComponent, dialogConfig);
+
+    dialogRef.afterClosed()
+   
   }
 }

@@ -4,7 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 
 import { ArtistComponent } from './components/artist/artist/artist.component';
-import { ArtistDetailComponent } from './components/artist/artist-detail/artist-detail.component';
 import { ArtistEditComponent } from './components/artist/artist-edit/artist-edit.component';
 import { ArtistCreateComponent } from './components/artist/artist-create/artist-create.component';
 
@@ -16,7 +15,6 @@ import { AlbumCreateComponent } from './components/album/album-create/album-crea
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'artists', component: ArtistComponent },
-  { path: 'artist/detail/:id', component: ArtistDetailComponent },
   { path: 'artist/edit/:id', component: ArtistEditComponent },
   { path: 'artist/create', component: ArtistCreateComponent },
   { path: 'artists/create', component: ArtistCreateComponent },
