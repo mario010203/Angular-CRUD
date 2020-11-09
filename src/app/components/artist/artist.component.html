@@ -1,0 +1,52 @@
+<div>
+  <table mat-table [dataSource]="artists" class="mat-elevation-z8">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let artists">{{ artists.name }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="photo-link">
+      <th mat-header-cell *matHeaderCellDef>Photo Link</th>
+      <td mat-cell *matCellDef="let artists">{{ artists.photoUrl }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="birthdate">
+      <th mat-header-cell *matHeaderCellDef>Birth Date</th>
+      <td mat-cell *matCellDef="let artists">{{ artists.birthdate }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="deathdate">
+      <th mat-header-cell *matHeaderCellDef>Death Date</th>
+      <td mat-cell *matCellDef="let artists">{{ artists.deathDate }}</td>
+    </ng-container>
+    <ng-container matColumnDef="edit">
+      <th mat-header-cell *matHeaderCellDef>Edit</th>
+      <td mat-cell *matCellDef="let artists">
+        <button mat-raised-button color="warn" (click)="openDialogedit(artists)">
+          Edit
+        </button>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef>Delete</th>
+      <td mat-cell *matCellDef="let artists">
+        <button mat-raised-button color="warn" (click)="delete(artists._id)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+  <div class="add-button-container">
+    <button
+      class="add-artist"
+      mat-raised-button
+      color="primary"
+      (click)="openDialogCreate()"
+    >
+      Add new Artist
+    </button>
+  </div>
+</div>
