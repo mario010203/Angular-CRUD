@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +17,7 @@ import { ArtistDetailComponent } from './components/artist/artist-detail/artist-
 import { ArtistEditComponent } from './components/artist/artist-edit/artist-edit.component';
 import { ArtistCreateComponent } from './components/artist/artist-create/artist-create.component';
 import { HomeComponent } from './components/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,14 +30,19 @@ import { HomeComponent } from './components/home/home.component';
     ArtistDetailComponent,
     ArtistEditComponent,
     ArtistCreateComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

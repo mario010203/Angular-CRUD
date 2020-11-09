@@ -1,1 +1,33 @@
-<p>home works!</p>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span class="mario">Mario</span><span class="music">Music</span>
+        <span class="spacer"></span>
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Artists</button>
+            <button mat-menu-item>Albums</button>
+        </mat-menu>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="principal">
+    <div>
+            <p>
+            Music
+        </p>
+        <p>
+            for everyone.
+        </p>
+
+    </div>
+    <div class="button-container">
+        <button class="button-artists">
+            Artists
+        </button>
+        <button class="button-albums">
+            Albums
+        </button>
+    </div>
+
+
+</div>
