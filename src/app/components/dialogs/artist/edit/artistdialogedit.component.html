@@ -1,10 +1,10 @@
 <div class="col-6 mx-auto mt-5 content">
   <form [formGroup]="formArtist" (ngSubmit)="onSubmit()">
     <div class="form-group">
-        <mat-form-field appearance="fill">
-            <mat-label>Artist Id</mat-label>
-            <input matInput formControlName="artistId" />
-          </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Artist Id</mat-label>
+        <input matInput formControlName="artistId" />
+      </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Artist Name</mat-label>
         <input matInput formControlName="name" />
@@ -19,7 +19,11 @@
 
       <mat-form-field appearance="fill">
         <mat-label>Choose a date</mat-label>
-        <input matInput [matDatepicker]="birthdate" formControlName="birthdate"  />
+        <input
+          matInput
+          [matDatepicker]="birthdate"
+          formControlName="birthdate"
+        />
         <mat-datepicker-toggle
           matSuffix
           [for]="birthdate"
@@ -29,7 +33,11 @@
 
       <mat-form-field appearance="fill">
         <mat-label>Choose a date</mat-label>
-        <input matInput [matDatepicker]="deathDate"  formControlName="deathDate"   />
+        <input
+          matInput
+          [matDatepicker]="deathDate"
+          formControlName="deathDate"
+        />
         <mat-datepicker-toggle
           matSuffix
           [for]="deathDate"
@@ -39,7 +47,7 @@
     </div>
 
     <div class="buttons">
-      <button type="submit" mat-raised-button color="primary" >
+      <button type="submit" mat-raised-button color="primary">
         Submit Changes
       </button>
       <button mat-raised-button color="warn" (click)="close()">

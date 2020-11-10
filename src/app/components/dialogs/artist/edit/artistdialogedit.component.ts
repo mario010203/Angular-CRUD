@@ -3,7 +3,6 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { Validators, FormGroup, FormControl } from '@angular/forms';
 import { Artistservice } from 'src/app/services/artist/artist.service';
 
-
 @Component({
   selector: 'artistedit',
   templateUrl: './artistdialogedit.component.html',
@@ -40,7 +39,7 @@ export class ArtistDialogEditComponent implements OnInit {
       (data) => {
         this.artists = data;
         this.dialogRef.close();
-        window.location.reload()
+        window.location.reload();
       },
       (error) => {
         console.log(error);

@@ -1,18 +1,17 @@
 .mat-form-field {
-    display: block;
+  display: block;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  button {
+    margin-right: 14px;
   }
-  
-  textarea {
-    height: 100px;
-    resize: vertical;
-  }
-  
-  .buttons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    button {
-      margin-right: 14px;
-    }
-  }
-  
+}

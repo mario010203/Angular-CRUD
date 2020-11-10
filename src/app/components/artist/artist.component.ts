@@ -5,6 +5,7 @@ import { Artistservice } from 'src/app/services/artist/artist.service';
 
 import { ArtistDialogEditComponent } from '../dialogs/artist/edit/artistdialogedit.component';
 import { ArtistDialogCreateComponent } from '../dialogs/artist/create/artistdialogcreate.component';
+import { AlbumDialogCreateComponent } from '../dialogs/album/create/albumdialogcreate.component';
 
 @Component({
   selector: 'app-artist',
@@ -17,6 +18,7 @@ export class ArtistComponent implements OnInit {
     'photo-link',
     'birthdate',
     'deathdate',
+    'create',
     'edit',
     'delete',
   ];
@@ -55,7 +57,6 @@ export class ArtistComponent implements OnInit {
         console.log(error);
       }
     );
- 
   }
 
   openDialogedit(artists) {
@@ -81,6 +82,24 @@ export class ArtistComponent implements OnInit {
       ArtistDialogCreateComponent,
       dialogConfig
     );
+    dialogRef.afterClosed();
+  }
+
+  openDialogLink(artists) {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+    const artist = artists._id;
+
+    dialogConfig.data = {
+      artist,
+    };
+
+    const dialogRef = this.dialog.open(
+      AlbumDialogCreateComponent,
+      dialogConfig
+    );
+
     dialogRef.afterClosed();
   }
 }

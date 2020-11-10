@@ -14,6 +14,10 @@ export class Albumservice {
     return this.http.get(`${baseUrl}${albumsConfig.allAlbumsurl}`);
   }
 
+  getAlbum(): Observable<any> {
+    return this.http.get(`${baseUrl}${albumsConfig.allAlbumsurl}`);
+  }
+
   editAlbum(id, album) {
     return this.http.put(`${baseUrl}${albumsConfig.albumEdit}${id}`, album);
   }

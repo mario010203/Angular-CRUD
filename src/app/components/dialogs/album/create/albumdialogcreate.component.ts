@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { Validators, FormGroup, FormControl } from '@angular/forms';
 import { Albumservice } from 'src/app/services/album/album.service';
-
 
 @Component({
   selector: 'albumdialogcreate',
@@ -15,15 +14,15 @@ export class AlbumDialogCreateComponent implements OnInit {
 
   constructor(
     private albumService: Albumservice,
-    private dialogRef: MatDialogRef<AlbumDialogCreateComponent>
-
+    private dialogRef: MatDialogRef<AlbumDialogCreateComponent>,
+    @Inject(MAT_DIALOG_DATA) { artist }
   ) {
     this.formAlbum = new FormGroup({
-      artistId: new FormControl('', [Validators.required,]),
-      title: new FormControl('', [Validators.required,]),
-      coverUrl: new FormControl('', [Validators.required,]),
-      year: new FormControl('', [Validators.required,]),
-      genre: new FormControl('', [Validators.required,])
+      artistId: new FormControl(artist, [Validators.required]),
+      title: new FormControl('', [Validators.required]),
+      coverUrl: new FormControl('', [Validators.required]),
+      year: new FormControl('', [Validators.required]),
+      genre: new FormControl('', [Validators.required]),
     });
   }
 
@@ -31,12 +30,11 @@ export class AlbumDialogCreateComponent implements OnInit {
 
   onSubmit(): void {
     const data = this.formAlbum.value;
-console.log(data)
     this.albumService.createAlbum(data).subscribe(
       (data) => {
         this.albums = data;
         this.dialogRef.close();
-        window.location.reload()
+        window.location.reload();
       },
       (error) => {
         console.log(error);
@@ -48,4 +46,3 @@ console.log(data)
     this.dialogRef.close();
   }
 }
-

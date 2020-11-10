@@ -1,32 +1,21 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 
 import { Albumservice } from 'src/app/services/album/album.service';
 
 import { AlbumDialogEditComponent } from '../dialogs/album/edit/albumdialogedit.component';
-import { AlbumDialogCreateComponent } from '../dialogs/album/create/albumdialogcreate.component';
 
 @Component({
   selector: 'app-album',
   templateUrl: './album.component.html',
-  styleUrls: ['./album.component.scss']
+  styleUrls: ['./album.component.scss'],
 })
 export class AlbumComponent implements OnInit {
-  displayedColumns = [
-    'name',
-    'coverUrl',
-    'year',
-    'genre',
-    'edit',
-    'delete',
-  ];
+  displayedColumns = ['name', 'coverUrl', 'year', 'genre', 'edit', 'delete'];
 
   albums: any;
 
-  constructor(
-    private albumService: Albumservice,
-    private dialog: MatDialog
-  ) {}
+  constructor(private albumService: Albumservice, private dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.getAllAlbums();
@@ -34,6 +23,18 @@ export class AlbumComponent implements OnInit {
 
   async getAllAlbums(): Promise<void> {
     this.albumService.getAlbums().subscribe(
+      (data) => {
+        this.albums = data;
+        console.log(data);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }
+
+  async getAllAlbum(): Promise<void> {
+    this.albumService.getAlbum().subscribe(
       (data) => {
         this.albums = data;
         console.log(data);
@@ -55,7 +56,6 @@ export class AlbumComponent implements OnInit {
         console.log(error);
       }
     );
- 
   }
 
   openDialogedit(albums) {
@@ -66,22 +66,13 @@ export class AlbumComponent implements OnInit {
     dialogConfig.data = {
       albums,
     };
-    
+
     const dialogRef = this.dialog.open(AlbumDialogEditComponent, dialogConfig);
 
     dialogRef.afterClosed();
   }
 
-  openDialogCreate() {
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.disableClose = true;
-    dialogConfig.autoFocus = true;
-
-    const dialogRef = this.dialog.open(
-      AlbumDialogCreateComponent,
-      dialogConfig
-    );
-    dialogRef.afterClosed();
+  redirect() {
+    window.location.href = '/artists';
   }
-
 }

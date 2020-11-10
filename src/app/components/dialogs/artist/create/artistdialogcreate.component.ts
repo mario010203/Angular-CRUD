@@ -1,8 +1,7 @@
-import { Component,  OnInit } from '@angular/core';
-import {  MatDialogRef } from '@angular/material/dialog';
+import { Component, OnInit } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 import { Validators, FormGroup, FormControl } from '@angular/forms';
 import { Artistservice } from 'src/app/services/artist/artist.service';
-
 
 @Component({
   selector: 'artistdialogcreate',
@@ -16,13 +15,12 @@ export class ArtistDialogCreateComponent implements OnInit {
   constructor(
     private artistService: Artistservice,
     private dialogRef: MatDialogRef<ArtistDialogCreateComponent>
-
   ) {
     this.formArtist = new FormGroup({
-      name: new FormControl('', [Validators.required,]),
-      photoUrl: new FormControl('', [Validators.required,]),
-      birthdate: new FormControl('', [Validators.required,]),
-      deathDate: new FormControl('', [Validators.required,])
+      name: new FormControl('', [Validators.required]),
+      photoUrl: new FormControl('', [Validators.required]),
+      birthdate: new FormControl('', [Validators.required]),
+      deathDate: new FormControl('', [Validators.required]),
     });
   }
 
@@ -30,12 +28,12 @@ export class ArtistDialogCreateComponent implements OnInit {
 
   onSubmit(): void {
     const data = this.formArtist.value;
-console.log(data)
+    console.log(data);
     this.artistService.createartist(data).subscribe(
       (data) => {
         this.artists = data;
         this.dialogRef.close();
-        window.location.reload()
+        window.location.reload();
       },
       (error) => {
         console.log(error);
@@ -47,4 +45,3 @@ console.log(data)
     this.dialogRef.close();
   }
 }
-

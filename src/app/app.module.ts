@@ -26,8 +26,6 @@ import { ArtistDialogCreateComponent } from './components/dialogs/artist/create/
 import { AlbumDialogCreateComponent } from './components/dialogs/album/create/albumdialogcreate.component';
 import { AlbumDialogEditComponent } from './components/dialogs/album/edit/albumdialogedit.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +36,7 @@ import { AlbumDialogEditComponent } from './components/dialogs/album/edit/albumd
     ArtistDialogCreateComponent,
     AlbumDialogCreateComponent,
     AlbumDialogEditComponent,
-    AlbumComponent
+    AlbumComponent,
   ],
   imports: [
     BrowserModule,

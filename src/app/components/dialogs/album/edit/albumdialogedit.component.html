@@ -1,10 +1,10 @@
 <div class="col-6 mx-auto mt-5 content">
   <form [formGroup]="formAlbum" (ngSubmit)="onSubmit()">
     <div class="form-group">
-        <mat-form-field appearance="fill">
-            <mat-label>Album Id</mat-label>
-            <input matInput formControlName="albumId" />
-          </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Album Id</mat-label>
+        <input matInput formControlName="albumId" />
+      </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Album Name</mat-label>
         <input matInput formControlName="title" />
@@ -23,9 +23,8 @@
       </mat-form-field>
     </div>
 
-
     <div class="buttons">
-      <button type="submit" mat-raised-button color="primary" >
+      <button type="submit" mat-raised-button color="primary">
         Submit Changes
       </button>
       <button mat-raised-button color="warn" (click)="close()">

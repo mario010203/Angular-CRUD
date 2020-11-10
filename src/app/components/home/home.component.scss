@@ -1,6 +1,5 @@
 $Tablet: 768px;
 
-
 .principal {
   height: 650px;
   background-color: #212529;
@@ -16,16 +15,13 @@ $Tablet: 768px;
     @media (min-width: $Tablet) {
       width: 40%;
     }
-
-
   }
-
 
   %message-shared {
     font-size: 32px;
     margin-bottom: 25px;
     line-height: 0.9;
-    margin-right:10px;
+    margin-right: 10px;
 
     @media (min-width: $Tablet) {
       font-size: 72px;
@@ -37,7 +33,7 @@ $Tablet: 768px;
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin:40px;
+    margin: 40px;
 
     .first-message {
       @extend %message-shared;
