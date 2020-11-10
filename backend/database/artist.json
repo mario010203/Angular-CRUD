@@ -1,0 +1,102 @@
+[
+    {
+      "_id": "5fa9ef0a5357890019c40bde",
+      "name": "Arin Petre",
+      "photoUrl": "http://dummyimage.com/210x147.png/dddddd/000000",
+      "birthdate": "2019-12-15T00:00:00.000Z",
+      "deathDate": "2020-06-30T00:00:00.000Z",
+      "__v": 0,
+      "_createdAt": "2020-11-10T01:38:18.690Z",
+      "_updatedAt": "2020-11-10T01:38:18.690Z"
+    },
+    {
+      "_id": "5fa9ef0a5357890019c40bd9",
+      "name": "Artair McCaughren",
+      "photoUrl": "http://dummyimage.com/217x218.jpg/5fa2dd/ffffff",
+      "birthdate": "2020-10-06T00:00:00.000Z",
+      "deathDate": "2020-02-11T00:00:00.000Z",
+      "__v": 0,
+      "_createdAt": "2020-11-10T01:38:18.688Z",
+      "_updatedAt": "2020-11-10T01:38:18.688Z"
+    },
+    {
+      "_id": "5fa9ef0a5357890019c40bdc",
+      "name": "Brittany Jope",
+      "photoUrl": "http://dummyimage.com/237x237.png/cc0000/ffffff",
+      "birthdate": "2020-09-19T00:00:00.000Z",
+      "deathDate": "2019-12-08T00:00:00.000Z",
+      "__v": 0,
+      "_createdAt": "2020-11-10T01:38:18.689Z",
+      "_updatedAt": "2020-11-10T01:38:18.689Z"
+    },
+    {
+      "_id": "5fa9ef0a5357890019c40bdb",
+      "name": "Craggy Hampe",
+      "photoUrl": "http://dummyimage.com/128x189.png/ff4444/ffffff",
+      "birthdate": "2020-09-23T00:00:00.000Z",
+      "deathDate": "2020-09-19T00:00:00.000Z",
+      "__v": 0,
+      "_createdAt": "2020-11-10T01:38:18.689Z",
+      "_updatedAt": "2020-11-10T01:38:18.689Z"
+    },
+    {
+      "_id": "5fa9ef0a5357890019c40bdf",
+      "name": "Dell Wait",
+      "photoUrl": "http://dummyimage.com/118x168.png/dddddd/000000",
+      "birthdate": "2020-04-23T00:00:00.000Z",
+      "deathDate": "2020-03-18T00:00:00.000Z",
+      "__v": 0,
+      "_createdAt": "2020-11-10T01:38:18.690Z",
+      "_updatedAt": "2020-11-10T01:38:18.690Z"
+    },
+    {
+      "_id": "5fa9ef0a5357890019c40be0",
+      "name": "Hadria Aldren",
+      "photoUrl": "http://dummyimage.com/224x183.bmp/cc0000/ffffff",
+      "birthdate": "2020-07-23T00:00:00.000Z",
+      "deathDate": "2019-12-14T00:00:00.000Z",
+      "__v": 0,
+      "_createdAt": "2020-11-10T01:38:18.690Z",
+      "_updatedAt": "2020-11-10T01:38:18.690Z"
+    },
+    {
+      "_id": "5fa9ef0a5357890019c40bdd",
+      "name": "Perceval Fearns",
+      "photoUrl": "http://dummyimage.com/225x182.png/5fa2dd/ffffff",
+      "birthdate": "2020-10-13T00:00:00.000Z",
+      "deathDate": "2020-08-07T00:00:00.000Z",
+      "__v": 0,
+      "_createdAt": "2020-11-10T01:38:18.690Z",
+      "_updatedAt": "2020-11-10T01:38:18.690Z"
+    },
+    {
+      "_id": "5fa9ef0a5357890019c40be2",
+      "name": "Rhonda Bowmer",
+      "photoUrl": "http://dummyimage.com/183x247.png/ff4444/ffffff",
+      "birthdate": "2020-04-25T00:00:00.000Z",
+      "deathDate": "2020-08-09T00:00:00.000Z",
+      "__v": 0,
+      "_createdAt": "2020-11-10T01:38:18.690Z",
+      "_updatedAt": "2020-11-10T01:38:18.690Z"
+    },
+    {
+      "_id": "5fa9ef0a5357890019c40bda",
+      "name": "Stephenie Brannan",
+      "photoUrl": "http://dummyimage.com/108x161.png/5fa2dd/ffffff",
+      "birthdate": "2019-11-30T00:00:00.000Z",
+      "deathDate": "2020-08-07T00:00:00.000Z",
+      "__v": 0,
+      "_createdAt": "2020-11-10T01:38:18.689Z",
+      "_updatedAt": "2020-11-10T01:38:18.689Z"
+    },
+    {
+      "_id": "5fa9ef0a5357890019c40be1",
+      "name": "Verene Breckell",
+      "photoUrl": "http://dummyimage.com/236x205.jpg/dddddd/000000",
+      "birthdate": "2019-12-30T00:00:00.000Z",
+      "deathDate": "2020-01-30T00:00:00.000Z",
+      "__v": 0,
+      "_createdAt": "2020-11-10T01:38:18.690Z",
+      "_updatedAt": "2020-11-10T01:38:18.690Z"
+    }
+  ]

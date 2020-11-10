@@ -1,0 +1,112 @@
+[
+    {
+      "_id": "5fa9f5355357890019c40bf7",
+      "artistId": "5fa9ef0a5357890019c40be1",
+      "title": "Duets",
+      "coverUrl": "http://dummyimage.com/136x217.png/ff4444/ffffff",
+      "year": 1974,
+      "genre": "Comedy|Drama",
+      "_createdAt": "2020-11-10T02:04:37.599Z",
+      "_updatedAt": "2020-11-10T02:04:37.599Z",
+      "__v": 0
+    },
+    {
+      "_id": "5fa9f44c5357890019c40bf1",
+      "title": "Hill, The",
+      "artistId": "5fa9ef0a5357890019c40bdf",
+      "coverUrl": "http://dummyimage.com/149x231.bmp/ff4444/ffffff",
+      "year": 1969,
+      "genre": "Drama|War",
+      "__v": 0,
+      "_createdAt": "2020-11-10T02:00:44.548Z",
+      "_updatedAt": "2020-11-10T02:00:44.548Z"
+    },
+    {
+      "_id": "5fa9f44c5357890019c40bed",
+      "title": "Level Five",
+      "artistId": "5fa9ef0a5357890019c40bde",
+      "coverUrl": "http://dummyimage.com/130x132.bmp/ff4444/ffffff",
+      "year": 2005,
+      "genre": "Documentary|Romance|War",
+      "__v": 0,
+      "_createdAt": "2020-11-10T02:00:44.547Z",
+      "_updatedAt": "2020-11-10T02:00:44.547Z"
+    },
+    {
+      "_id": "5fa9f44c5357890019c40bf0",
+      "title": "Overlord",
+      "artistId": "5fa9ef0a5357890019c40bdb",
+      "coverUrl": "http://dummyimage.com/199x114.png/dddddd/000000",
+      "year": 1995,
+      "genre": "Drama|War",
+      "__v": 0,
+      "_createdAt": "2020-11-10T02:00:44.548Z",
+      "_updatedAt": "2020-11-10T02:00:44.548Z"
+    },
+    {
+      "_id": "5fa9f44c5357890019c40bef",
+      "title": "Poolsite",
+      "artistId": "5fa9ef0a5357890019c40bdc",
+      "coverUrl": "http://dummyimage.com/117x186.bmp/ff4444/ffffff",
+      "year": 1937,
+      "genre": "Crime|Drama",
+      "__v": 0,
+      "_createdAt": "2020-11-10T02:00:44.548Z",
+      "_updatedAt": "2020-11-10T02:00:44.548Z"
+    },
+    {
+      "_id": "5fa9f44c5357890019c40bf2",
+      "title": "Taffin",
+      "artistId": "5fa9ef0a5357890019c40be0",
+      "coverUrl": "http://dummyimage.com/198x239.jpg/cc0000/ffffff",
+      "year": 1986,
+      "genre": "Action|Thriller",
+      "__v": 0,
+      "_createdAt": "2020-11-10T02:00:44.548Z",
+      "_updatedAt": "2020-11-10T02:00:44.548Z"
+    },
+    {
+      "_id": "5fa9f44c5357890019c40bf3",
+      "title": "Tales of Manhattan",
+      "artistId": "5fa9ef0a5357890019c40bdd",
+      "coverUrl": "http://dummyimage.com/176x212.bmp/cc0000/ffffff",
+      "year": 1954,
+      "genre": "Comedy|Drama",
+      "__v": 0,
+      "_createdAt": "2020-11-10T02:00:44.548Z",
+      "_updatedAt": "2020-11-10T02:00:44.548Z"
+    },
+    {
+      "_id": "5fa9f44c5357890019c40bee",
+      "title": "Toolbox Murders",
+      "artistId": "5fa9ef0a5357890019c40bd9",
+      "coverUrl": "http://dummyimage.com/222x112.jpg/ff4444/ffffff",
+      "year": 1976,
+      "genre": "Horror|Mystery",
+      "__v": 0,
+      "_createdAt": "2020-11-10T02:00:44.547Z",
+      "_updatedAt": "2020-11-10T02:00:44.547Z"
+    },
+    {
+      "_id": "5fa9f44c5357890019c40bf4",
+      "title": "Trojan War",
+      "artistId": "5fa9ef0a5357890019c40be2",
+      "coverUrl": "http://dummyimage.com/110x185.jpg/5fa2dd/ffffff",
+      "year": 1988,
+      "genre": "Comedy",
+      "__v": 0,
+      "_createdAt": "2020-11-10T02:00:44.549Z",
+      "_updatedAt": "2020-11-10T02:00:44.549Z"
+    },
+    {
+      "_id": "5fa9f44c5357890019c40bf5",
+      "title": "Union: The Business Behind Getting High, The",
+      "artistId": "5fa9ef0a5357890019c40bda",
+      "coverUrl": "http://dummyimage.com/192x156.jpg/dddddd/000000",
+      "year": 2007,
+      "genre": "Comedy|Documentary",
+      "__v": 0,
+      "_createdAt": "2020-11-10T02:00:44.549Z",
+      "_updatedAt": "2020-11-10T02:00:44.549Z"
+    }
+  ]
