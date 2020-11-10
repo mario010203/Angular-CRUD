@@ -11,6 +11,8 @@ import { Artistservice } from 'src/app/services/artist/artist.service';
 export class ArtistDialogCreateComponent implements OnInit {
   artists: any;
   formArtist: FormGroup;
+  minDate: Date;
+  maxDate: Date;
 
   constructor(
     private artistService: Artistservice,
@@ -22,6 +24,9 @@ export class ArtistDialogCreateComponent implements OnInit {
       birthdate: new FormControl('', [Validators.required]),
       deathDate: new FormControl('', [Validators.required]),
     });
+    const currentYear = new Date().getFullYear();
+    this.minDate = new Date(currentYear - 110, 0, 0);
+    this.maxDate = new Date(currentYear + 11, 0, 0);
   }
 
   ngOnInit() {}

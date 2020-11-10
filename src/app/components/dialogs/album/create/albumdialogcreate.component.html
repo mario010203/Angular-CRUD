@@ -15,7 +15,13 @@
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Album Year</mat-label>
-        <input matInput formControlName="year" />
+        <input
+          matInput
+          formControlName="year"
+          ngModel
+          pattern="[(1909|19[1-9][0-9]|20[0-2][0-9]|2030)]*"
+        />
+        <div *ngIf="year.errors">
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Album Genre</mat-label>
