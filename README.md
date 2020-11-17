@@ -1,9 +1,4 @@
-# Kenjo-CRUD
-  <a href="https://www.kenjo.io/es/inicio">
-    <img src="https://www.softwaredoit.es/logotipos/kenjo.jpg?t=2020-06-29_09_05_24" alt="Kenjo" width="450" height="200">
-  </a>
-
-*Because humans are more than resources*
+# Angular-CRUD
 
 ## Table of Contents
 
